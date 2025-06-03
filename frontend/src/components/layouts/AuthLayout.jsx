@@ -1,12 +1,14 @@
 import React from "react";
 import CARD_2 from "../../assets/images/transaction.jpg";
 import { LuTrendingUpDown } from "react-icons/lu";
+import FinanceBuddyLogo from '../../assets/images/logo_finance_buddy.png'
 
 const AuthLayout = ({ children }) => {
   return (
     <div className="flex bg-purple-200">
-      <div className="w-screen h-screen md:w-[60vw] px-12 pt-8 pb-12">
-        <h2 className="text-xl font-bold text-black font-serif">Finance Buddy</h2>
+      <div className="w-screen h-screen md:w-[60vw] px-12 pt-8 pb-12 ">
+        {/* <h2 className="text-xl font-bold text-black font-serif">Finance Buddy</h2> */}
+        
         {children}
       </div>
 

@@ -8,6 +8,7 @@ import axiosInstance from '../../utils/axiosInstance';
 import { API_PATHS } from '../../utils/apiPath';
 import { UserContext } from '../../context/UserContext';
 import uploadImage from '../../utils/uploadImage';
+import FinanceBuddyLogo from '../../assets/images/logo_finance_buddy.png'
 
 const SignUp = () => {
   const [profilePic, setProfilePic] = useState(null);
@@ -75,11 +76,16 @@ const SignUp = () => {
 
   return (
     <AuthLayout>
-      <div className='lg:w-[100%] h-auto md:h-full mt-10 md:mt-0 pt-22 flex flex-col justify-center'>
-        <h3 className='text-xl font-semibold text-black mt-5'>Create an Account</h3>
-        <p className='text-md text-slate-700 mt-[5px] mb-6'>
+      <div className='lg:w-[100%] h-auto md:h-full mt-10 md:mt-0 pt-1 flex flex-col justify-center'>
+        <img 
+          src={FinanceBuddyLogo} 
+          alt="Finance Buddy" 
+          className="w-58 pt-0"
+        />
+        <h3 className='text-xl font-semibold text-black mt-2'>Create an Account</h3>
+        {/* <p className='text-md text-slate-700 mt-[5px] mb-6'>
           Join us today by entering your details below.
-        </p>
+        </p> */}
 
         <form onSubmit={handleSignUp}>
 

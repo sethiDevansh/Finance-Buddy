@@ -6,6 +6,7 @@ import { validateEmail } from '../../utils/helper';
 import axiosInstance from '../../utils/axiosInstance';
 import { API_PATHS } from '../../utils/apiPath';
 import { UserContext } from '../../context/UserContext';
+import FinanceBuddyLogo from '../../assets/images/logo_finance_buddy.png'
 
 const Login = () => {
   const [email,setEmail] = useState('');
@@ -55,8 +56,13 @@ const Login = () => {
 
   return (
     <AuthLayout>  
-      <div className='lg:w-[70%] h-3/4 md:h-full px-2 pt-22 flex flex-col justify-center '>
-        <h3 className='text-2xl font-bold text-black'>Welcome Back </h3>
+      <div className='lg:w-[70%] h-3/4 md:h-full px-2 pt-0 flex flex-col justify-center '>
+        <img 
+          src={FinanceBuddyLogo} 
+          alt="Finance Buddy" 
+          className="w-70 pt-2"
+        />
+        <h3 className='text-xl font-bold text-black'>Welcome Back </h3>
         <p className='text-md text-slate-700 mt-[5px] mb-6'>
           Please enter your details to log in
           </p>
