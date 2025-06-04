@@ -77,11 +77,13 @@ const SignUp = () => {
   return (
     <AuthLayout>
       <div className='lg:w-[100%] h-auto md:h-full mt-10 md:mt-0 pt-1 flex flex-col justify-center'>
-        <img 
+        <div className='flex justify-center items-center'>
+          <img 
           src={FinanceBuddyLogo} 
           alt="Finance Buddy" 
-          className="w-58 pt-0"
+          className="w-60"
         />
+        </div>
         <h3 className='text-xl font-semibold text-black mt-2'>Create an Account</h3>
         {/* <p className='text-md text-slate-700 mt-[5px] mb-6'>
           Join us today by entering your details below.

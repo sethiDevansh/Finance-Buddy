@@ -60,7 +60,7 @@ const Login = () => {
         <img 
           src={FinanceBuddyLogo} 
           alt="Finance Buddy" 
-          className="w-70 pt-2"
+          className="w-70 pt-2 flex  flex-col items-center justify-center ml-24"
         />
         <h3 className='text-xl font-bold text-black'>Welcome Back </h3>
         <p className='text-md text-slate-700 mt-[5px] mb-6'>
