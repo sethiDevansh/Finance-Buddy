@@ -76,26 +76,23 @@ const SignUp = () => {
 
   return (
     <AuthLayout>
-      <div className='lg:w-[100%] h-auto md:h-full mt-10 md:mt-0 pt-1 flex flex-col justify-center'>
-        { <div className='pt-4 font-bold'>
-        {/* //   <img 
-        //   src={FinanceBuddyLogo} 
-        //   alt="Finance Buddy" 
-        //   className="w-50 pl-2 mt-0"
-        // />
-         */}
-         <h2 className='text-xl'>Finance Buddy</h2>
-        </div> }
-        <h3 className='text-xl font-semibold text-black mt-40'>Create an Account</h3>
-        {/* <p className='text-md text-slate-700 mt-[5px] mb-6'>
-          Join us today by entering your details below.
-        </p> */}
+      <div 
+        className='lg:w-[70%] h-auto md:h-full mt-10 md:mt-0 pt-1 flex flex-col justify-center'
+        >
+         {/* <h2 
+            className='text-xl pt-14 font-bold'>
+            Finance Buddy
+        </h2> */}
+
+        <h3 className='text-xl font-semibold text-black mt-18'>Create an Account</h3>
+        <p className='text-md text-slate-700 mt-[5px] mb-6'>
+          Join Finance Buddy today by entering your details below.
+        </p>
 
         <form onSubmit={handleSignUp}>
 
           <ProfilePhotoSelector image={profilePic} setImage={setProfilePic} />
 
-          <div className='grid grid-cols-1 md:grid-cols-2 gap-2'>
             <Input
               value={fullName}
               onChange={(e) => setFullName(e.target.value)}
@@ -113,7 +110,6 @@ const SignUp = () => {
               required
             />
 
-            <div className='col-span-2'>
               <Input 
               value={password}
               onChange={({target}) => setPassword(target.value)}
@@ -122,8 +118,6 @@ const SignUp = () => {
               type='password' 
               required
             />
-            </div>
-          </div>
 
           {error && <p className='text-red-600 text-sm pb-2.5'>{error}</p>}
           
