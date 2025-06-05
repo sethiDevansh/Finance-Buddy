@@ -81,7 +81,7 @@ const SignUp = () => {
           <img 
           src={FinanceBuddyLogo} 
           alt="Finance Buddy" 
-          className="w-60"
+          className="w-50 pl-2 mt-0"
         />
         </div>
         <h3 className='text-xl font-semibold text-black mt-2'>Create an Account</h3>
