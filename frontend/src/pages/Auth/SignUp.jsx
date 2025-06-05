@@ -84,7 +84,7 @@ const SignUp = () => {
             Finance Buddy
         </h2> */}
 
-        <h3 className='text-xl font-semibold text-black mt-18'>Create an Account</h3>
+        <h3 className='text-xl font-semibold text-black mt-10'>Create an Account</h3>
         <p className='text-md text-slate-700 mt-[5px] mb-6'>
           Join Finance Buddy today by entering your details below.
         </p>
